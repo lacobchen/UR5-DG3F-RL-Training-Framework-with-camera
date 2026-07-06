@@ -4,25 +4,7 @@
 
 ## 1.Project Structure
 
-UR5_RL_with_Camera/
-├── envs/
-│   ├── __init__.py
-│   ├── base/
-│   │   ├── __init__.py
-│   │   ├── base_UR5_env.py         # Base RL environment (DirectRLEnv)
-│   │   └── base_UR5_env_cfg.py     # Base config (robot, actuators, DiffIK)
-│   ├── tasks/
-│   │   ├── __init__.py             # Gym registration for 我的任務ID
-│   │   ├── task_pick_cube_env.py   # Task env (observations, rewards, dones)
-│   │   ├── task_pick_cube_cfg.py   # Task config (cameras, cube, reward weights)
-│   │   └── agents/
-│   │       ├── __init__.py
-│   │       └── rsl_rl_ppo_cfg.py   # PPO (actor/critic/algorithm)
-│   ├── backend/
-│   │   ├── __init__.py
-│   │   └── simulation_backend.py   # 模擬環境及溝通(Isaac Lab scene, state, Jacobian, reset)
-│   └── vision_encoder.py           # CNN depth encoder (DepthEncoder)
-└── run_official_train.bat          # 訓練啟動腳本
+<img width="862" height="506" alt="image" src="https://github.com/user-attachments/assets/164e1621-8605-4806-81f5-bf741b633194" />
 
 
 RL Policy (PPO)
