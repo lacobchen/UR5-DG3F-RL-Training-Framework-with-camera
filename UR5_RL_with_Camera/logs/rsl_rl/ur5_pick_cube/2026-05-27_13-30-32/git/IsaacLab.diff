@@ -1,0 +1,33 @@
+--- git commit ---
+f4aa17f87e2e5db5484f0b5974918573e8918ce2
+
+
+--- git status ---
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   scripts/reinforcement_learning/rsl_rl/train.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	2.7.0+cu128
+
+no changes added to commit (use "git add" and/or "git commit -a") 
+
+
+--- git diff ---
+diff --git a/scripts/reinforcement_learning/rsl_rl/train.py b/scripts/reinforcement_learning/rsl_rl/train.py
+index 0a306e18c4e..7db32552588 100644
+--- a/scripts/reinforcement_learning/rsl_rl/train.py
++++ b/scripts/reinforcement_learning/rsl_rl/train.py
+@@ -97,6 +97,7 @@ from isaaclab.utils.io import dump_yaml
+ from isaaclab_rl.rsl_rl import RslRlBaseRunnerCfg, RslRlVecEnvWrapper, handle_deprecated_rsl_rl_cfg
+ 
+ import isaaclab_tasks  # noqa: F401
++import envs.tasks      # noqa: F401
+ from isaaclab_tasks.utils import get_checkpoint_path
+ from isaaclab_tasks.utils.hydra import hydra_task_config
+ 
